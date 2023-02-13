@@ -1,9 +1,11 @@
-body{background-color:black;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
-    border-width: 1px;
+.wd-button {
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 20px;
+    margin-top: 8px;
+    height: 40px;
 }
-
 .wd-margin-left {
 margin-left: 16px;
 }
@@ -31,6 +33,9 @@ top: 16px;
 .wd-fg-color-white { color: white; }
 .wd-fg-color-gray { color: rgb(110, 118, 125); }
 .wd-bg-color-light-gray { background-color: rgb(22,24,29);}
+.wd-fg-color-black {
+    color: black;
+}
 
 .wd-link {
 text-decoration: none;
@@ -101,8 +106,8 @@ border-width: 0px;
 
 .wd-input-icon {
 position: absolute;
-top: 35px;
-left: 20px;
+top: -19px;
+/*left: 20px;*/
 
 }
 
@@ -124,6 +129,29 @@ width: 70%;
 margin-bottom: 0px;
 display:block;
 }
+
+.wd-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.wd-container-2 {
+    display: flex;
+    align-items: center;
+}
+
+.wd-equal-margins {
+    margin: auto;
+}
+
+.wd-img {
+    border-radius: 50%;
+    border-color: rgb(22,24,29);
+    border-width: 1px;
+}
+
+
 
 
 
