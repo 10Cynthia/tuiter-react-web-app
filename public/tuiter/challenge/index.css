@@ -39,18 +39,22 @@ top: 16px;
 
 .wd-link {
 text-decoration: none;
-color: rgb(110, 118, 125);
 padding: 16px;
-font-size: 15px;
+font-size: 18px;
 }
 
 .wd-fg-color-blue {
 color: rgb(29,161,242);
  }
 
+.wd-bg-color-blue {
+    background-color: rgb(29,161,242);
+}
+
 .wd-border-bottom {
-border-bottom: 3px solid rgb(29,161,242);
+border-bottom: 5px solid rgb(29,161,242);
 margin-left: 16px;
+    border-radius: 3px;
 }
 
 .wd-rounded-corners-all-around {
@@ -146,9 +150,9 @@ display:block;
 }
 
 .wd-img {
-    width:50px;
-    height: 50px;
-    border-radius: 50px;
+    width:45px;
+    height: 45px;
+    border-radius:45px;
     border-color: rgb(22,24,29);
     border-width: 1px;
 }
@@ -165,11 +169,85 @@ display:block;
     }
 }
 
+.wd-button {
+    border:none;
+    height: 50px;
+    font-size: 7px;
+    font-weight: bold;
+}
 
+.wd-no-border {
+    border:none;
 
+}
 
+.wd-font {
+    font-family: "Verdana", sans-serif;
+}
 
+.wd-search-height {
+    height: 20px;
+}
 
+.wd-bold {
+    font-weight: bold;
+}
 
+.wd-container-3 {
+    display: flex;
+    justify-content: space-evenly;
 
+}
+.wd-img-text {
+    font-size: 15px;
 
+}
+.wd-img-title {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.wd-link-no-border {
+    text-decoration: none;
+}
+
+.wd-bg-black {
+    background-color: black;
+}
+
+.wd-btn-size {
+    height: 30px;
+    width: 80px;
+}
+
+.wd-img-1 {
+    border-radius: 5px;
+    width:50px;
+    height: 50px;
+}
+
+.wd-fg-color-gold {
+    color: goldenrod;
+}
+
+.wd-text-font {
+    font-size: 15px;
+}
+
+.wd-show-more {text-decoration: none;
+
+font-size: 16px;}
+
+.wd-container-4 {height:50px;
+display: flex;
+align-items: center;}
+
+.wd-bg-color-light-light-gray {background-color: rgb(245,245,245);
+}
+
+.wd-font-size {
+font-size:15px;
+}
+
+.div {
+border: none;}
