@@ -1,0 +1,26 @@
+[
+  {
+    "_id": 123,
+    "avatarIcon": "space.jfif",
+    "userName": "SpaceX",
+    "handle": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "23h",
+    "image": "starship.jpg",
+    "messageNum": "595",
+    "retweetNum": "1,168",
+    "likeNum": "11.1K"
+  },
+  {
+    "_id": 234,
+    "avatarIcon": "tesla.jfif",
+    "userName": "Elon Musk",
+    "handle": "elonmusk",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "15h",
+    "image": "tennis.jfif",
+    "messageNum": "5,346",
+    "retweetNum": "1,601",
+    "likeNum": "19.2K"
+  }
+]
