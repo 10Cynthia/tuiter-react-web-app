@@ -14,7 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 
-const NavigationSidebar = ({ }) => {
+const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split('/')
   const active = paths[2];

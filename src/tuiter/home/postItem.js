@@ -27,7 +27,7 @@ const PostItem = ({
     <li className="list-group-item">
       <div className="row">
         <div className="col-1 ">
-          <img
+          <img alt="avatar"
             className="rounded-circle wd-img mb-2"
             height={48}
             src={`/images/${homepost.avatarIcon}`}
