@@ -1,7 +1,13 @@
 import React from "react";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faEllipsis,faMessage, faRetweet, faHeart, faShare} from '@fortawesome/free-solid-svg-icons'
+import {
+  faEllipsis,
+  faMessage,
+  faRetweet,
+  faHeart,
+  faShare,
+} from "@fortawesome/free-solid-svg-icons";
 
 const PostItem = ({
   homepost = {
@@ -14,7 +20,7 @@ const PostItem = ({
     image: "starship.jpg",
     messageNum: "595",
     retweetNum: "1,168",
-    likeNum: "11.1K"
+    likeNum: "11.1K",
   },
 }) => {
   return (
@@ -24,9 +30,8 @@ const PostItem = ({
           <img
             className="rounded-circle wd-img mb-2"
             height={48}
-            src={`/image/${homepost.avatarIcon}`}
+            src={`/images/${homepost.avatarIcon}`}
           />
-          
         </div>
         <div className="col-11 position-relative">
           <div>
@@ -36,20 +41,35 @@ const PostItem = ({
               {" "}
               @{homepost.handle} . {homepost.time}
             </span>
-            <FontAwesomeIcon icon={faEllipsis} className='float-end text-secondary position-relative'/>
+            <FontAwesomeIcon
+              icon={faEllipsis}
+              className="float-end text-secondary position-relative"
+            />
           </div>
           <p className="ms-3">{homepost.title}</p>
           <img
             className="wd-img-rounded-corner w-100 ms-3"
             src={`/images/${homepost.image}`}
           />
-          <div className="mt-2 text-secondary ms-3">
-          <FontAwesomeIcon icon={faMessage} className='me-3'/> <span className="me-5">{homepost.messageNum}</span>
-          <FontAwesomeIcon icon={faRetweet} className='me-3'/><span className="me-5">{homepost.retweetNum}</span>
-          <FontAwesomeIcon icon={faHeart} className='me-3'/><span className="me-5">{homepost.likeNum}</span>
-          <FontAwesomeIcon icon={faShare} className='me-3'/>
-          </div>
+          <div className="mt-2 text-secondary wd-container-icon ms-3">
+            <div className="me-5">
+              <FontAwesomeIcon icon={faMessage} className="me-2" />
+              <span>{homepost.messageNum}</span>
+            </div>
+            <div className="me-5">
+              <FontAwesomeIcon icon={faRetweet} className="me-2" />
+              <span>{homepost.retweetNum}</span>
+            </div>
+            <div className="me-5">
+              <FontAwesomeIcon icon={faHeart} className="me-2" />
+              <span>{homepost.likeNum}</span>
+            </div>
+            <div className="me-5">
+              <FontAwesomeIcon icon={faShare} className="me-2" />
+            </div>
 
+          
+          </div>
         </div>
       </div>
     </li>

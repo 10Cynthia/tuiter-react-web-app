@@ -3,6 +3,8 @@ import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
+import HomeComponent from "./tuiter/home";
+import ExploreComponent from "./tuiter/explore";
 
 function App() {
   return (

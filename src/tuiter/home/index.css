@@ -188,9 +188,10 @@ display:block;
     }
 }
 
-.wd-home-icon {
+.wd-container-icon {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
