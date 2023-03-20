@@ -7,7 +7,7 @@ import {
   faHeart,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { tuitLikeToggle } from "./tuits-reducer";
 
 const TuitBar = ({
@@ -28,11 +28,13 @@ const TuitBar = ({
       "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
   },
 }) => {
+    const data = useSelector((state) => state);
+    console.log(data)
   const dispatch = useDispatch();
   const toggleLikedClicked = (tuit) => {
-    dispatch(toggleLikedClicked(tuit));
+    dispatch(tuitLikeToggle(tuit));
   };
-  const like = tuit.liked;
+  const liked = tuit.liked;
 
   return (
     <div className="mt-2 text-secondary wd-container-icon ms-3">
@@ -44,10 +46,9 @@ const TuitBar = ({
         <FontAwesomeIcon icon={faRetweet} className="me-2" />
         <span>{tuit.retuits}</span>
       </div>
-      <div className="col-3 me-5 float-start">
-        <button style={{ border: 'none', background: 'none' }} onClick={() => tuitLikeToggle(tuit)}>
-        <FontAwesomeIcon icon={faHeart} className="me-2" />
-        </button>
+      <div className="col-3 me-5 float-start" style={{cursor:"pointer"}} onClick={() => toggleLikedClicked(tuit)}>
+        
+        <FontAwesomeIcon icon={faHeart} className="me-2" color={liked ? "#f44336": "grey"}/>
         <span>{tuit.likes}</span>
       </div>
       <div className="col-3 me-5 float-start">

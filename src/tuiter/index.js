@@ -2,9 +2,9 @@ import React from "react";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
-import TuitList from "./tuits/TuitsList ";
+// import TuitList from "./tuits/TuitsList ";
 import { Routes, Route } from "react-router";
-// import HomeComponent from "./home";
+import HomeComponent from "./home";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
@@ -23,9 +23,9 @@ function Tuiter() {
           style={{ position: "relative" }}
         >
           <Routes>
-            <Route path="home" element={<TuitList />} />
+            <Route path="home" element={<HomeComponent />} />
             <Route path="explore" element={<ExploreComponent />} />
-            <Route path="/" element={<TuitList />} />
+            <Route path="/" element={<HomeComponent />} />
           </Routes>
         </div>
         <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
