@@ -24,7 +24,7 @@ const ProfileComponent = () => {
           className="wd-banner-position rounded-circle"
           style={{ width: "90px", height: "90px" }}
         ></img>
-        <Link to="/tuiter/edit-profile mt-2">
+        <Link to="/tuiter/edit-profile">
           <button className="float-end wd-button fw-bolder">Edit Profile</button>
         </Link>
       </div>
