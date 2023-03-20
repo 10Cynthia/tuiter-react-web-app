@@ -1,0 +1,66 @@
+
+.wd-banner-position {
+    position: absolute;
+    top: 140px;
+    z-index: 10;
+    background: white;
+    left: 20px;
+}
+.wd-container {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.wd-button {
+    background-color: white;
+    color: rgb(14, 13, 13);
+    border: 0.5px solid rgb(176, 171, 171) ;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.wd-container-text{
+    margin-top: 100px;
+}
+
+.wd-edit-container {
+    border: 0.5px solid rgb(172, 169, 169) ;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+.wd-label {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+.wd-input-container {
+    border: none;
+    width: 99%;
+}
+
+.wd-name {
+    font-size:large;
+}
+
+.wd-handler {
+    font-size:medium;
+}
+
+.wd-text {
+    font-size: medium;
+}
+.wd-save {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 50px;
+    font-size:medium;
+}
+
+.wd-container-2 {
+    border: 0.5px solid rgb(172, 169, 169) ;
+    margin-top: 20px;
+    border-radius: 5px;
+}

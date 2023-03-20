@@ -10,6 +10,7 @@ import {
   faListUl,
   faUser,
   faEllipsis,
+  faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
@@ -28,31 +29,21 @@ const NavigationSidebar = () => {
         to="/tuiter/home"
         className={`list-group-item ${active === "home" ? "active" : ""}`}
       >
-        Home
+        <FontAwesomeIcon icon={faHouse} />
+        <span> Home</span>
       </Link>
       <Link
         to="/tuiter/explore"
         className={`list-group-item ${active === "explore" ? "active" : ""}`}
       >
-        Explore
-      </Link>
-      <Link to="/" className="list-group-item">
-        Labs
-      </Link>
-      <a
-        className={`list-group-item
-                    ${active === "home" ? "active" : ""}`}
-      >
-        <FontAwesomeIcon icon={faHouse} />
-        <span> Home</span>
-      </a>
-      <a
-        className={`list-group-item
-                    ${active === "explore" ? "active" : ""}`}
-      >
         <FontAwesomeIcon icon={faHashtag} />
         <span> Explore</span>
-      </a>
+      </Link>
+      <Link to="/" className="list-group-item">
+      <FontAwesomeIcon icon={faStar} />
+        <span> Lab</span>
+      </Link>
+      
       <a
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
@@ -81,13 +72,15 @@ const NavigationSidebar = () => {
         <FontAwesomeIcon icon={faListUl} />
         <span> Lists</span>
       </a>
-      <a
-        className={`list-group-item
-                    ${active === "profile" ? "active" : ""}`}
+    
+
+      <Link
+        to="/tuiter/profile"
+        className={`list-group-item ${active === "profile" ? "active" : ""}`}
       >
         <FontAwesomeIcon icon={faUser} />
         <span> Profile</span>
-      </a>
+      </Link>
       <a
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
