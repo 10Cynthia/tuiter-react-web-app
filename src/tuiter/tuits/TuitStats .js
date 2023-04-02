@@ -8,7 +8,7 @@ import {
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
-import { tuitLikeToggle } from "./tuits-reducer";
+// import { tuitLikeToggle } from "./tuits-reducer";
 import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitBar = ({
@@ -32,9 +32,9 @@ const TuitBar = ({
     const data = useSelector((state) => state);
     console.log(data)
   const dispatch = useDispatch();
-  const toggleLikedClicked = (tuit) => {
-    dispatch(tuitLikeToggle(tuit));
-  };
+  // const toggleLikedClicked = (tuit) => {
+  //   dispatch(tuitLikeToggle(tuit));
+  // };
   const liked = tuit.liked;
 
   return (
