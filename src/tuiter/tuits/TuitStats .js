@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { tuitLikeToggle } from "./tuits-reducer";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitBar = ({
   tuit = {
@@ -46,7 +47,10 @@ const TuitBar = ({
         <FontAwesomeIcon icon={faRetweet} className="me-2" />
         <span>{tuit.retuits}</span>
       </div>
-      <div className="col-3 me-5 float-start" style={{cursor:"pointer"}} onClick={() => toggleLikedClicked(tuit)}>
+      <div className="col-3 me-5 float-start" style={{cursor:"pointer"}} onClick={() => dispatch(updateTuitThunk({
+        ...tuit,
+        likes: tuit.likes + 1
+      }))}>
         
         <FontAwesomeIcon icon={faHeart} className="me-2" color={liked ? "#f44336": "grey"}/>
         <span>{tuit.likes}</span>

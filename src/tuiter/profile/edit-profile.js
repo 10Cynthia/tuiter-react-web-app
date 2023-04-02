@@ -32,7 +32,7 @@ const EditProfile = () => {
           marginBottom: "5px",
         }}
       >
-        <p className="fw-bolder">Edit Profile</p>
+        <p className="fw-bolder" style={{marginBottom: 0}}>Edit Profile</p>
         <button onClick={saveProfileHandler} className="wd-save">
           Save
         </button>
@@ -74,12 +74,11 @@ const EditProfile = () => {
         <label for="bio" className="wd-label text-secondary ms-1 mt-1">
           Bio
         </label>
-        <input type={text}
+        <textarea
           id="bio"
           onChange={(event) => profileChangeHandler("bio", event)}
-          value={`${user.bio}`}
           className="wd-input-container ms-1 mb-1"
-        />
+        >{`${user.bio}`}</textarea>
       </div>
       <div className="wd-edit-container">
         <label for="location" className="wd-label text-secondary ms-1 mt-1">

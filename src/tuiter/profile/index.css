@@ -12,11 +12,11 @@
 }
 
 .wd-button {
-    background-color: white;
-    color: rgb(14, 13, 13);
-    border: 0.5px solid rgb(176, 171, 171) ;
-    padding: 8px;
-    border-radius: 20px;
+    padding: 2px 12px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
 }
 
 .wd-container-text{
@@ -37,6 +37,7 @@
 .wd-input-container {
     border: none;
     width: 99%;
+    outline: none;
 }
 
 .wd-name {

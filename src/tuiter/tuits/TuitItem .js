@@ -2,7 +2,8 @@ import React from "react";
 import "./index.css";
 import TuitBar from "./TuitStats ";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+// import { deleteTuit } from "./tuits-reducer";
 
 const TuitItem = ({
   tuit = {
@@ -24,7 +25,7 @@ const TuitItem = ({
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
@@ -55,25 +56,6 @@ const TuitItem = ({
             <TuitBar tuit={tuit} />
           </div>
 
-          {/* <div className="mt-2 text-secondary wd-container-icon ms-3">
-            <div className="me-5">
-              <FontAwesomeIcon icon={faMessage} className="me-2" />
-              <span>{tuit.messageNum}</span>
-            </div>
-            <div className="me-5">
-              <FontAwesomeIcon icon={faRetweet} className="me-2" />
-              <span>{tuit.retweetNum}</span>
-            </div>
-            <div className="me-5">
-              <FontAwesomeIcon icon={faHeart} className="me-2" />
-              <span>{tuit.likeNum}</span>
-            </div>
-            <div className="me-5">
-              <FontAwesomeIcon icon={faShare} className="me-2" />
-            </div>
-
-          
-          </div> */}
         </div>
       </div>
     </li>
